@@ -1,11 +1,11 @@
 Summary:	VisualOn AAC encoder library
 Name:		vo-aacenc
-Version:	0.1.2
+Version:	0.1.3
 Release:	1
 License:	Apache v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/opencore-amr/%{name}-%{version}.tar.gz
-# Source0-md5:	cc862dce14ea5d688506904160c65a02
+# Source0-md5:	b574da1d92d75fc40b0b75aa16f24ac4
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog NEWS NOTICE README
+%doc ChangeLog NOTICE README
 %attr(755,root,root) %ghost %{_libdir}/libvo-aacenc.so.?
 %attr(755,root,root) %{_libdir}/libvo-aacenc.so.*.*.*
 
